@@ -1,6 +1,6 @@
 # 1.schema: graphql schema location
 
-schema: "https://api.lens.dev/"
+schema: 'https://api-mumbai.lens.dev'
 
 
 # 2.schema:   
@@ -11,7 +11,7 @@ generates:
     plugins:
       - typescript
       - typescript-operations
-      - typed-document-node
+      - typescript-react-query
       - fragment-matcher
 
     configs:
