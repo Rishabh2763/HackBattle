@@ -1,0 +1,18 @@
+# 1.schema: graphql schema location
+
+schema: 'https://api-mumbai.lens.dev'
+
+
+# 2.schema:   
+documents: "src/graphql/*.graphql"
+
+generates:
+  src/graphql/generated.ts:
+    plugins:
+      - typescript
+      - typescript-operations
+      - typescript-react-query
+      - fragment-matcher
+
+    config:
+      dedupeFragments: true
