@@ -1,6 +1,7 @@
 import { PublicationSortCriteria,useExplorePublicationsQuery } from "@/graphql/generated"
 import { ConnectWallet, useAddress } from "@thirdweb-dev/react";
 import useLogin from "../lib/auth/useLogin";
+
 export default function Home() {
   // const {data,isLoading,error}=useExplorePublicationsQuery(
   //   {
@@ -22,7 +23,7 @@ export default function Home() {
 
   return (
 
-    <button onClick={()=>requestLogin()}>Login</button>
+    <button onClick={()=>requestLogin()}>Login With Lens</button>
     
       
       
