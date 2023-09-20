@@ -3,14 +3,6 @@ import { PublicationSortCriteria,useExplorePublicationsQuery } from "@/graphql/g
 export default function Home() {
   const {data,isLoading,error}=useExplorePublicationsQuery(
     {
-      endpoint: 'https://api-mumbai.lens.dev',
-      fetchParams:{
-        headers:{
-          "content-type":"application/json",
-        }
-      },
-    },
-    {
       request:{
         sortCriteria:PublicationSortCriteria.TopCollected,
       },
@@ -25,7 +17,6 @@ export default function Home() {
   });
   return (
     <main>Hello World
-      
     </main>
       
       
